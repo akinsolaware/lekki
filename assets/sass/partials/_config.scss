@@ -1,0 +1,272 @@
+// Importing font
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap');
+
+
+html{
+  font-size: 13px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body{
+  //font-family: 'Poppins', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  //line-height: 2.1428;
+  line-height: normal;
+  color: #333333;
+  overflow-x:hidden;
+  -webkit-overflow-scrolling:touch;
+
+}
+
+::-webkit-scrollbar{
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background: $accent-color;
+}
+
+::selection{
+  background-color:$accent-color;
+  color:#fff;
+}
+
+-webkit-::selection{
+  background-color:$accent-color;
+  color:#fff;
+}
+
+::-moz-selection{
+  background-color:$accent-color;
+  color:#fff;
+}
+
+
+
+
+
+// Typography
+
+h1,
+.h1{
+  font-weight: 700;
+  font-size: 3.428rem;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #000;
+  letter-spacing: -0.025em;
+  margin:0.5em 0;
+}
+
+h2,
+.h2{
+  font-weight: 600;
+  font-size: 2.571rem;
+  line-height: 1.166;
+  color: #000;
+  letter-spacing: 0;
+  margin:2.6rem 0;
+}
+
+h3,
+.h3{
+  font-weight: 600;
+  font-size: 2.142rem;
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+  color: #000;
+  margin:2.6rem 0;
+}
+
+h4,
+.h4{
+  font-weight: 600;
+  font-size: 1.714rem;
+  line-height: 1.25;
+  letter-spacing: 0.025em;
+  color: #000;
+  margin:2.6rem 0;
+}
+
+h5,
+.h5{
+  font-weight: 600;
+  font-size: 1.571rem;
+  line-height: 1.1;
+  letter-spacing:0;
+  color: #000;
+  margin:2.6rem 0;
+}
+
+h6,
+.h6{
+  font-weight: 600;
+  font-size: 1.285rem;
+  line-height: 1.3333;
+  letter-spacing:0;
+  color: #000;
+  margin:2.6rem 0;
+}
+
+h1 a,
+.h1 a,
+h2 a,
+.h2 a,
+h3 a,
+.h3 a,
+h4 a,
+.h4 a,
+h5 a,
+.h5 a,
+h6 a,
+.h6 a{
+  color:inherit;
+}
+
+h1 a:hover,
+.h1 a:hover,
+h2 a:hover,
+.h2 a:hover,
+h3 a:hover,
+.h3 a:hover,
+h4 a:hover,
+.h4 a:hover,
+h5 a:hover,
+.h5 a:hover,
+h6 a:hover,
+.h6 a:hover{
+  text-decoration: none;
+}
+
+
+strong{
+  font-weight: 600;
+}
+
+p,
+blockquote{
+  margin-bottom: 2.6rem;
+}
+
+p:after,
+blockquote:after{
+  content:'';
+  clear:both;
+}
+
+blockquote{
+  font-family: 'Playfair Display', serif;
+  font-size: 1.714rem;
+  letter-spacing: 0.025em;
+  line-height: 1.5;
+  padding: 0;
+  width: 80%;
+  padding-left: 4.8rem;
+  border-left: 0.3rem solid $accent-color;
+  margin-top: 5rem;
+  color:#000;
+}
+
+cite{
+  font-size:1.14rem;
+  font-weight:400;
+  display: block;
+  color: #7e7e7e;
+  font-weight: 600;
+  letter-spacing: 0;
+  font-style: normal;
+  color:#000;
+}
+
+blockquote cite{
+  margin-top:2.6rem;
+}
+
+.blockquote-cite{
+  font-size: 1rem;
+  color: #999999;
+  letter-spacing: 0.05em;
+  padding-left: 5.1rem;
+  margin-bottom: 5rem;
+}
+
+.blockquote-cite cite{
+  font-size: 1.14rem
+}
+
+table,
+th,
+td {
+  border: 1px solid #d1d1d1;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-width: 1px 0 0 1px;
+  margin: 0 0 1.75em;
+  table-layout: fixed;
+  /* Prevents HTML tables from becoming too wide */
+  width: 100%;
+}
+
+caption,
+th,
+td {
+  font-weight: normal;
+  text-align: left;
+}
+
+th {
+  border-width: 0 1px 1px 0;
+  font-weight: 700;
+}
+
+td {
+  border-width: 0 1px 1px 0;
+}
+
+th,
+td {
+  padding: 0.7em;
+}
+
+dl dd{
+  margin-bottom:2rem;
+}
+
+
+img{
+  max-width:100%;
+  height:auto;
+}
+
+a {
+  color:$accent-color;
+  -webkit-transition: color .3s ease-out;
+  -o-transition: color .3s ease-out;
+  transition: color .3s ease-out;
+}
+
+a:hover,
+a:focus {
+  color:$accent-color;
+  outline: none;
+}
+
+
+a:focus{
+  text-decoration: none;
+}
+
+
+.btn {
+  border-radius: 0;
+}

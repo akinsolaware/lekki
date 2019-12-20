@@ -1,0 +1,128 @@
+
+.super-table {
+
+  // General Configuration
+  table {
+    border-radius: $soft-border-radius;
+    //border-collapse: collapse;
+    width: 100%;
+    border: none;
+    box-shadow: $feather-shadow;
+    font-size: 0.9em;
+
+    thead {
+      border-radius: $soft-border-radius;
+      tr {
+        border-radius: $soft-border-radius;
+        th {
+          padding: 20px 12px 20px 12px;
+          text-align: left;
+          font-size: 1.4em;
+          border-bottom: 0px solid #EEE;
+
+          &:first-child{border-top-left-radius: $soft-border-radius; /*border-bottom-left-radius: $soft-border-radius;*/}
+          &:last-child{border-top-right-radius: $soft-border-radius; /*border-bottom-right-radius: $soft-border-radius;*/}
+        }
+      }
+    }
+
+    tbody {
+      /*tr:nth-child(even){background-color: #f7f7f7;}
+      tr:nth-child(odd){background-color: #ffffff;}*/
+      border-bottom: none;
+      tr {
+        border-bottom: 1px solid #EEE;
+        transition: all 0.2s ease-in-out;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        td {
+          padding: 12px;
+          vertical-align: top;
+          font-size: 1.3em;
+          .hidden-component {display: none; font-size: 0.8em;}
+        }
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+
+
+
+
+  // make table borderless
+  .super-table-borderless {
+    border-bottom: 0;
+  }
+
+
+  //make table full border
+  .super-table-bordered {
+    tbody {
+      tr {
+        td {
+          border: 1px solid #EEE;
+        }
+      }
+    }
+  }
+
+  // striped table
+
+
+  // hover-normal
+  .super-table-hover-normal {
+    tr {
+      &:hover {
+        background-color: #EEE;
+        //box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+        cursor: pointer;
+
+        td {
+          &:first-child{border-top-left-radius: $soft-border-radius; border-bottom-left-radius: $soft-border-radius;}
+          &:last-child{border-top-right-radius: $soft-border-radius; border-bottom-right-radius: $soft-border-radius;}
+          .hidden-component {display: block; font-weight: normal; color: #666}
+        }
+      }
+    }
+  }
+
+
+  // hover-xl
+  .super-table-hover-xl {
+    tbody {
+      cursor: pointer;
+
+      tr {
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+          //border-radius: $soft-border-radius;
+          td {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: #FFF;
+            color: #666;
+            font-weight: bold;
+
+            //&:first-child{border-top-left-radius: $b-radius-sm; border-bottom-left-radius: $b-radius-sm;}
+            //&:last-child{border-top-right-radius: $b-radius-sm; border-bottom-right-radius: $b-radius-sm;}
+
+            .hidden-component {display: block; font-weight: normal; color: #666}
+          }
+        }
+      }
+    }
+  }
+
+  //additional styling for data tables
+
+
+
+}

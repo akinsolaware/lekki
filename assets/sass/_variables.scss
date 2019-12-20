@@ -1,0 +1,32 @@
+
+// CUSTOM THEME COLOR PALETTE
+$heavy-dark   : #160f30;
+$purplish     : #1C4969;
+$snow-white   : #f6f6f6;
+$dirty-white  : #eae9e9;
+$dull-white   : #d4d7dd;
+$mahogany     : #420000;
+$pinkish      : #a72693;
+$faded-yellow : #FA9917;
+$accent-color : #0382C1;
+
+
+// CUSTOM THEME
+$theme-colors: (
+  "heavy-dark": $heavy-dark,
+  "purplish": $purplish,
+  "snow-white": $snow-white,
+  "dirty-white": $dirty-white,
+  "dull-white": $dull-white,
+  "mahogany": $mahogany,
+  "pinkish": $pinkish,
+  "faded-yellow": $faded-yellow,
+  "accent-color": $accent-color,
+);
+
+
+// Global Settings
+$easy-transition      :                  all 0.6s ease-in-out;
+$feather-shadow       :                  0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+$soft-shadow          :                  0 0 5px 5px rgba(0, 0, 0, 0.03);
+$soft-border-radius   :                  10px;

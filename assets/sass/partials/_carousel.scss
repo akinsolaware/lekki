@@ -1,0 +1,129 @@
+
+// Main Banner Slider
+.banner-area {
+
+  .carousel, .item, .active {
+    height: 100%;
+    transition: $easy-transition;
+  }
+
+  .carousel-inner {
+    height: 100%;
+    transition: $easy-transition;
+  }
+
+  .carousel-caption{
+    text-align: left;
+    height: 100%;
+    top: 30%;
+
+    h1 {
+      color: #FFF;
+      font-size: 5em;
+      padding-top: 0;
+      margin-top: 0;
+        @media (pointer: coarse) and (hover: none) {
+          font-size: 3em;
+        }
+      }
+  }
+
+  .carousel-indicators {
+    li {
+      text-align:right;
+    }
+  }
+
+  .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+    .overlay {
+      width: 100%;
+      height: 100%;
+        background: rgba(0,0,0,0.3);
+      //background: rgba(3, 130, 193, 0.8);
+      //background: rgba(28, 73, 105, 0.4);
+      //display: table;
+      transition: $easy-transition;
+
+      /*&:hover {
+        background: none;
+      }*/
+    }
+  }
+
+  .animated {
+    -webkit-animation-duration: 2.5s;
+    animation-duration: 2.5s;
+    animation-delay: 0.5s;
+  }
+
+}
+
+
+
+
+
+
+
+#listingCarousel {
+  .list-box {
+    height: 500px;
+    overflow: hidden;
+    align-items: center;
+    position: relative;
+    margin-bottom: 15px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      align-self: center;
+      position: absolute;
+      z-index: -1;
+    }
+
+    .title-box {
+      text-align: left;
+      padding: 75% 20px 20px 20px;
+      background: rgba(0,0,0,0.2);
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: 1;
+      transition: $easy-transition;
+
+      h2 {color: #FFF; margin-bottom: 0; padding-bottom: 0;}
+      h5 { color: $accent-color; padding: 0; margin: 0; text-transform: uppercase; font-weight: 300;}
+
+      .show-details-box {
+        display: none;
+        margin-top: 35px;
+        p {
+          line-height: normal;
+          color: #FFF;
+          font-weight: bold;
+        }
+      }
+
+      &:hover {
+        padding: 15% 20px 20px 20px;
+        //background: rgba(206, 224, 2,0.8);
+        background: rgba(242, 73, 1,0.8);
+        h2,h5 {color: #000;}
+
+        .show-details-box {
+          display: block;
+        }
+      }
+    }
+
+  }
+}
+
+
